@@ -918,3 +918,4 @@ transition: 250ms var(--timing-cube);
 fill: var(--navy-blue);
 }
 
+.sub-email::placeholder{color: rgba(255, 255, 255, 0.6);}

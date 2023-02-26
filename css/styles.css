@@ -645,6 +645,60 @@ h2.team-title{text-align: center; margin-bottom: 72px;}
         background-color: var(--green);
 }
 
+.subscribe-form{
+     margin-top: 16px;
+display: flex;
+}
+
+.sub-btn-footer{
+     width: 165px;
+      height: 40px;  
+      background-color: var(--iris);
+      margin-left: 24px;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        border: none;
+        color: var(--main-color);
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: 0.04em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 250ms var(--timing-cube);
+}
+
+.sub-btn-footer:focus, .sub-btn-footer:hover{
+        background-color: var(--ocean);
+}
+
+.icon-sub{
+   margin-left: 16px;
+      
+}
+
+.sub-email{
+        width: 264px;
+        background-color: #fcfcfc00;
+        height: 40px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+}
+
+.sub-email:focus{
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+        border-radius: 4px;
+        color: var(--cloud);
+}
+
+.footer-sub-wrapper{
+       margin-left: 80px;
+        
+}
+
 
 /*************modal**************/
 
@@ -803,36 +857,7 @@ display: block;
      padding-top:0px;
 }*/
 
-/*.policy-info{
-      margin-top: 16px;  
-}
-.policy-txt{
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 14px;
-        letter-spacing: 0.04em;
-        color: #757575;
-        display: flex;
-}
 
-.policy-txt::before{
-      content: ''; 
-      width: 16px;
-      height: 16px;
-        border: 1.25px solid var(--navy-blue);
-        border-radius: 2px;
-}
-
-if checked
-.checkbox-modal:checked + .policy-txt::before{
-        
-        border: none;
-        background-color: var(--ocean);
-        background-image: url(../images/icons.svg#icon-Vector2);
-        background-repeat: no-repeat;
-        background-position: center;
-        fill: #F4F4FD;
-} */
 .policy-wrapper{
         display: inline-block;
         margin-top: 16px;
@@ -844,6 +869,7 @@ if checked
         line-height: 14px;
         letter-spacing: 0.04em;
         color: #757575;
+        
 }
 
 .checkbox-custom{
@@ -857,14 +883,25 @@ width: 16px;
 height: 16px;
 border: 1.25px solid #2E2F42;
 border-radius: 2px;
-margin-right: 10px;  
+margin-right: 8px; 
 }
 
 .input-checkbox:checked + .checkbox-custom::before{
-        background-color: #31D0AA;
+        background-color: var(--ocean);
         border:none;
-        background-image: url(../images/icons.svg#icon-Vector2);
+        background-image: url(../images/check.svg);
+        background-repeat: no-repeat;
+        background-position: center;
 }
+
+.input-checkbox:focus + .checkbox-custom::before{
+background-color: var(--ocean);
+        border: none;
+        background-image: url(../images/check.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+}
+
 
 /*modal icon in input*/
 .wraper-input{

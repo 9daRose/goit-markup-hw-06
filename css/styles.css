@@ -57,6 +57,16 @@ img {
 
 a{}
 
+input, textarea{
+        border:none;
+outline: none;
+}
+
+input:focus, textarea:focus{
+        outline: none;
+        border: none;
+}
+
 .link:visited{
         color:inherit; 
         text-decoration: none;
@@ -678,7 +688,7 @@ h2.team-title{text-align: center; margin-bottom: 72px;}
 }
 
 
-.modal-btn:hover{background-color: 
+.modal-btn:hover, .modal-btn:focus{background-color: 
         var(--ocean); 
         border: none;
         fill: var(--main-color);
@@ -698,3 +708,176 @@ h2.team-title{text-align: center; margin-bottom: 72px;}
 .backdrop.is-hidden .modal{
 transform: translate(-50%, -50%) scaleX(0);
 }
+
+/*modal inputs*/
+
+.form-main{
+ margin-top: 16px;
+}
+
+.modal-title{
+font-weight: 500;
+font-size: 16px;
+line-height: 24px;
+text-align: center;
+letter-spacing: 0.02em;
+color: var(--navy-blue);
+margin-top: 24px;
+margin-bottom: 16px;
+}
+
+.modal-input{
+        width: 100%;
+        height: 40px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        background-color: #FCFCFC;
+        padding-left: 7px;
+        padding-left: 38px;
+        transition: 250ms var(--timing-cube);
+       
+}
+
+.modal-input:focus{
+        border: 1px solid var(--iris);
+}
+
+.modal-input:focus+.modal-icon {fill:var(--iris)}
+
+.form-txtarea{
+        width: 100%;
+        height: 120px;
+        border: 1px solid rgba(33, 33, 33, 0.2);
+        border-radius: 4px;
+        resize: none;
+}
+textarea.form-txtarea{
+        padding: 8px 16px;
+        font-size: 12px;
+        font-family: 'Roboto';
+        font-style: normal;
+}
+
+.form-txtarea:focus{
+        border: 1px solid rgba(33, 33, 33, 0.2);
+                border-radius: 4px;
+}
+
+.form-txtarea::placeholder{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        color: rgba(117, 117, 117, 0.5);
+}
+
+.lable-form{
+display: block;
+}
+
+.form-main > .sub-btn{
+       
+        display: block;
+        margin: 24px auto 0px auto;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+}
+
+.input-sub-title{
+      display: block;
+       padding-bottom: 4px; 
+       padding-top:8px;
+       color: var(--light-slate);
+       font-weight: 400;
+       font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        
+}
+
+/*.lable-form:nth-child(1){
+     color:#31D0AA;
+     background-color: #4D5AE5;
+     padding-top:0px;
+}*/
+
+/*.policy-info{
+      margin-top: 16px;  
+}
+.policy-txt{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        color: #757575;
+        display: flex;
+}
+
+.policy-txt::before{
+      content: ''; 
+      width: 16px;
+      height: 16px;
+        border: 1.25px solid var(--navy-blue);
+        border-radius: 2px;
+}
+
+if checked
+.checkbox-modal:checked + .policy-txt::before{
+        
+        border: none;
+        background-color: var(--ocean);
+        background-image: url(../images/icons.svg#icon-Vector2);
+        background-repeat: no-repeat;
+        background-position: center;
+        fill: #F4F4FD;
+} */
+.policy-wrapper{
+        display: inline-block;
+        margin-top: 16px;
+}
+
+.policy-text{
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.04em;
+        color: #757575;
+}
+
+.checkbox-custom{
+        display: flex;
+       
+}
+
+.checkbox-custom::before{
+content: '';
+width: 16px;
+height: 16px;
+border: 1.25px solid #2E2F42;
+border-radius: 2px;
+margin-right: 10px;  
+}
+
+.input-checkbox:checked + .checkbox-custom::before{
+        background-color: #31D0AA;
+        border:none;
+        background-image: url(../images/icons.svg#icon-Vector2);
+}
+
+/*modal icon in input*/
+.wraper-input{
+        position: relative;
+}
+
+
+.modal-icon{
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    transform: translate(0, -50%);
+transition: 250ms var(--timing-cube);
+fill: var(--navy-blue);
+}
+
